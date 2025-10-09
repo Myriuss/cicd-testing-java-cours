@@ -32,11 +32,12 @@ class MultiplicationJourneyE2ETest {
   }
 
   @BeforeEach
+
   void setUpWebDriver() {
     webDriver = new FirefoxDriver();
-    baseUrl = "http://localhost:" + port + "/calculator";
-
+    baseUrl = "http://172.20.10.4:" + port + "/calculator";
   }
+
 
   @AfterEach
   void quitWebDriver() {
